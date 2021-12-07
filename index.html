@@ -8,14 +8,34 @@
         <script src="js/script.js"></script>
         <form>
             <div>
-                <label for="Birth Century">Birth Century</label>
-                <input type="number" name="of birth>
+                <label for="Birth Century">Birth Century:</label>
+                <input type="number" name="birth Century" id="Birth Century" placeholder="CC - is the century digits. For example 1989 has CC = 19">
             </div>
             <div>
-                <label>Gender</label>
+                <label for="Year of Birth">Year of Birth:</label>
+                <input type="text" name="year of birth" id="Year of Birth" placeholder="Enter the last 2 digits of your year of birth eg 1989 = 89">
             </div>
-            <input>
-                <button>Submit</button>
+            <div>
+                <label for="Month of Birth">Month of Birth:</label>
+                <input type="number" name="Month of birth" id="Month of Birth" placeholder="Enter the month you were born eg 1 for Jan, 2 Feb" min="1" max="12">
+            </div>
+            <div>
+                <label for="date of Birth">Date of Birth:</label>
+                <input type="number" name="date of birth" id="date of Birth" placeholder="Enter the date you were born min="1" max="31">
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="Gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="Gender" id="female" value="female">
+                </div>
+                <button type="reset">Reset</button>
+                <button type="Submit">Submit</button>
+            </div>
         </form>
     </body>
     </head>
