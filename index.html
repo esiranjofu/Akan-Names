@@ -3,28 +3,29 @@
     <meta name="viewport" content="width=width-device, initial scale=1.0"> 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-    <link href="image/sunset photo.jpeg">
 <head>
        <title> Akan Names</title> 
     <body>
-        <script src="js/script.js"></script>
         <div class="container fluid">
-            <form>
+        <script src="js/script.js"></script>
+        <div class="bg-img">
+            <form class="container">
+                <h1>Try This Out: Derive your Akan Name!!</h1>
                 <div>
                     <label for="Birth Century">Birth Century:</label>
-                    <input type="number" name="birth Century" id="Birth Century" placeholder="CC - is the century digits. For example 1989 has CC = 19">
+                    <input type="number" name="birth Century" id="Birth Century" placeholder="Enter the 1st 2 digits of year of birth" required>
                 </div>
                 <div>
                     <label for="Year of Birth">Year of Birth:</label>
-                    <input type="text" name="year of birth" id="Year of Birth" placeholder="Enter the last 2 digits of your year of birth eg 1989 = 89">
+                    <input type="text" name="year of birth" id="Year of Birth" placeholder="Enter the last 2 digits of year of birth" required>
                 </div>
                 <div>
                     <label for="Month of Birth">Month of Birth:</label>
-                    <input type="number" name="Month of birth" id="Month of Birth" placeholder="Enter the month you were born eg 1 for Jan, 2 Feb" min="1" max="12">
+                    <input type="number" name="Month of birth" id="Month of Birth" placeholder="Enter your birth month eg 1 for Jan, 2 Feb" min="1" max="12" required>
                 </div>
                 <div>
                     <label for="date of Birth">Date of Birth:</label>
-                    <input type="number" name="date of birth" id="date of Birth" placeholder="Enter the date you were born min="1" max="31">
+                    <input type="number" name="date of birth" id="date of Birth" placeholder="Enter your date of birth min="1" max="31" required>
                 </div>
                 <div>
                  Gender
@@ -40,6 +41,7 @@
                 <button type="Submit">Submit</button>
                 </div>
             </form>
+        </div>
         </div>
     </body>
     </head>
