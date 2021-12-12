@@ -10,12 +10,19 @@ body, html {
     /* Control the height of the image */
     min-height: 600px;
   
-    /* Center and scale the image nicely */
+    /* Center and scale the image */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
   }
+  .container {
+    position: absolute;
+    margin: 10px;
+    max-width: 300px;
+    padding: 16px;
+  }
+  
   label {
     display: inline-block;
     width: 150px;
@@ -23,11 +30,14 @@ body, html {
   }
   input{
       padding: 3px 250px;
+      text-align: center;
+  }
+    ::-webkit-input-placeholder {
+        text-align: start;
+      }
   }
 
   input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
