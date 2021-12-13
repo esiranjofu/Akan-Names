@@ -7,23 +7,22 @@ body, html {
     background-image: url("../image/sunset\ photo.jpeg");
   
     /* Control the height of the image */
-    min-height: 600px;
+    min-height: 150%;
   
     /* Center and scale the image */
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     position: relative;
   }
-  .container {
+ .container {
     position: absolute;
     margin: 10px;
     max-width: 300px;
     padding: 16px;
   }
-  
-  label {
-    float: left;
+   label {
+    display: inline-block;
     width: 150px;
     text-align: left;
   }
