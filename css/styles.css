@@ -24,7 +24,7 @@ body, html {
   }
   
   label {
-    display: inline-block;
+    float: left;
     width: 150px;
     text-align: left;
   }
@@ -32,11 +32,11 @@ body, html {
       padding: 3px 250px;
       text-align: center;
   }
-    ::-webkit-input-placeholder {
-        text-align: start;
-      }
-  }
-
+  ::-webkit-input-placeholder { 
+    white-space:pre-wrap;  
+    position:relative;
+    top:-11px;
+    }
   input[type=submit] {
     padding: 12px 20px;
     border: none;
@@ -44,3 +44,4 @@ body, html {
     cursor: pointer;
     float: right;
   }
+
