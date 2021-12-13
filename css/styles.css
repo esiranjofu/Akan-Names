@@ -42,5 +42,6 @@ body, html {
     cursor: pointer;
     float: right;
   }
-  
-
+  em{
+    color: grey
+  }
