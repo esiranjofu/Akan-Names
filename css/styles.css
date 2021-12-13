@@ -1,8 +1,7 @@
 body, html {
     height: 100%;
     text-align: center;
-  } 
-  
+  }
   .bg-img {
     /* The image used */
     background-image: url("../image/sunset\ photo.jpeg");
