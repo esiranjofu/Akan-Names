@@ -1,5 +1,6 @@
 function validate() {
-    var genders = document.getElementsByName("gender");
+    var mgender = document.myForm.mgender;
+    var fgender = document.myForm.fgender;
     if(document.myForm.name.value == ""){
         alert( "Kindly enter your First Name" );
     }
@@ -13,12 +14,12 @@ function validate() {
        document.myForm.month.focus() ;
        return false;}
        else if( document.myForm.born.value == "" || isNaN( document.myForm.born.value ) || 
-       ( document.myForm.born.value < 31 || document.myForm.born.value >= 0) ){
+       ( document.myForm.born.value > 31 || document.myForm.born.value <= 0) ){
           alert( "Please provide a valid date of birth choosing between 1 - 31" );
           document.myForm.born.focus() ;
           return false;
        }
-       else if(genders[0].checked==false && genders[1].checked==false ) {
+       else if(mgender.checked==false && fgender.checked==false ) {
            alert("Please choose your gender");
            return false;
        }   
