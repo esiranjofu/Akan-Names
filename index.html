@@ -18,22 +18,22 @@
         <h4>Enter Your Details here</h4>
         <div class="container fluid">
         <script src="js/script.js"></script>
-            <form name="myForm" onsubmit="validate" class="container">
-                <div>
-                    <label for="birthCentury">Birth Century:</label>
-                    <input type="text" name="birthCentury" id="Birth Century" placeholder="Enter the 1st 2 digits of your year of birth">
+            <form name="myForm" onsubmit="validate();" class="form">
+                <div class="form group">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your first name">
                 </div>
-                <div>
-                    <label for="yearOfBirth">Year of Birth:</label>
-                    <input type="text" name="yearOfBirth" id="Year of Birth" placeholder="Enter the last 2 digits of your year of birth">
+                <div class="form-group">
+                    <label for="year">Year of Birth:</label>
+                    <input type="number" name="year" id="year" placeholder="Enter your year of birth">
                 </div>
-                <div>
-                    <label for="monthOfBirth">Month of Birth:</label>
-                    <input type="number" name="monthOfBirth" id="monthOfBirth" placeholder="Enter your birth month eg 1 for Jan, 2 Feb" min="1" max="12">
+                <div class="form-group">
+                    <label for="month">Month of Birth:</label>
+                    <input type="number" class="form-control" name="month" id="month" placeholder="Enter your month of birth"
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="born">Date of Birth:</label>
-                    <input type="date" class="form-control" id="born" placeholder="Enter your date of birth min="1" max="31">
+                    <input type="number" class="form-control" id="born" placeholder="Enter your date of birth"
                 </div>
                 Gender
                 <div class="radio">
