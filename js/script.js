@@ -1,3 +1,7 @@
+var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
+var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
+var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
+
 function validate() {
     var yearOfBirth = document.myForm.year;
     var monthOfBirth = document.myForm.month;
@@ -7,7 +11,7 @@ function validate() {
     if(document.myForm.name.value == ""){
         alert( "Kindly enter your First Name" );
     }
-    else if( yearOfBirth.value == "" || yearOfBirth.value.length !=4 || yearOfBirth.value >2100 || yearOfBirth.value <=1800) {
+    else if( yearOfBirth.value == "" || yearOfBirth.value.length !=4 || yearOfBirth.value <=1800 || yearOfBirth.value >2021) {
        alert( "Please provide a valid year of birth eg 2021" );
        document.myForm.year.focus() ;
        return false;}
@@ -27,7 +31,15 @@ function validate() {
        else{
          return true;}
        }
-var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
-var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
-var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
-var CC, YY, MM, DD, dayBorn;
+
+function calculateDayBorn(){
+   var year = document.myForm.year;
+   var CC = parseInt(year.substring(0,2));
+   var YY = parseInt(year.substring(2,4));
+   var MM = parseInt(document.myForm.month.value);
+   var DD = parseInt(document.myForm.born.value);
+   var d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
+   console.log(d);
+   return (Math.floor(d));
+}
+console.log(calculateDayBorn);
