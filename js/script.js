@@ -2,9 +2,8 @@ function validate() {
     var yearOfBirth = document.myForm.year;
     var monthOfBirth = document.myForm.month;
     var dateOfBirth = document.myForm.born;
-    var mgender = document.myForm.mgender;
-    var fgender = document.myForm.fgender;
-    if(document.myForm.name.value == ""){
+    var genders = document.myForm.gender;
+        if(document.myForm.name.value == ""){
         alert( "Kindly enter your First Name" );
     }
     else if( yearOfBirth.value == "" || yearOfBirth.value.length !=4 || yearOfBirth.value <=1800 || yearOfBirth.value >2021) {
@@ -20,7 +19,7 @@ function validate() {
           document.myForm.born.focus() ;
           return false;
        }
-       else if(mgender.checked==false && fgender.checked==false ) {
+       else if(genders[0].checked==false && genders[1].checked==false ) {
            alert("Please choose your gender either Male or Female");
            return false;
        }   
@@ -31,7 +30,8 @@ var dayOfWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'
 var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 var months =['Jan', 'Feb', 'March', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-var firstName = document.myForm("name");
+var firstName = document.getElementsByName("name");
+let akanNameForm = document.getElementsByName("myForm");
 var dayValue;
 function getDayValue(){
 var year = document.getElementsByName("year").value;
