@@ -125,35 +125,35 @@ var gender = prompt('Enter your gender, either Male or Female');
 switch (gender){
   case "Male":
   if(finalAns==0){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[0], + 'And Your Akan Name is', + maleNames[0] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[0]} and Your akan name is ${maleNames[0]}`);
   }else if (finalAns==1){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[1], + 'And Your Akan Name is', + maleNames[1] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[1]} and Your akan name is ${maleNames[1]}`);
   }else if (finalAns==2){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[2], + 'And Your Akan Name is', + maleNames[2] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[2]} and Your akan name is ${maleNames[2]}`);
   }else if (finalAns==3){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[3], + 'And Your Akan Name is', + maleNames[3] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[3]} and Your akan name is ${maleNames[3]}`);
   }else if (finalAns==4){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[4], + 'And Your Akan Name is', + maleNames[4]);
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[4]} and Your akan name is ${maleNames[4]}`);
   }else if (finalAns==5){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[5], + 'And Your Akan Name is', + maleNames[5] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[5]} and Your akan name is ${maleNames[5]}`);
   }else if (finalAns==6){
-    alert ('Hi '+ firstName, +'you were born on ' + dayOfWeek[6], + 'And Your Akan Name is', + maleNames[6] );
+    alert (`Hi ${firstName} You were born on ${dayOfWeek[6]} and Your akan name is ${maleNames[6]}`);
   }
     break;
   case "Female":
-  if(finalAns==0){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[0], 'And Your Akan Name is', femaleNames[0] );
-  }else if (finalAns==1){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[1], 'And Your Akan Name is', femaleNames[1] );
-  }else if (finalAns==2){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[2], 'And Your Akan Name is', femaleNames[2] );
-  }else if (finalAns==3){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[3], 'And Your Akan Name is', femaleNames[3] );
-  }else if (finalAns==4){
-    alert ('Hi' + name, + 'you were born on  '+ dayOfWeek[4], + 'And Your Akan Name is', femaleNames[4]);
-  }else if (finalAns==5){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[1], 'And Your Akan Name is', femaleNames[5] );
-  }else if (finalAns==6){
-    alert ('Hi '+ name, 'you were born on ' + dayOfWeek[6], 'And Your Akan Name is', femaleNames[6] );
+    if(finalAns==0){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[0]} and Your akan name is ${femaleNames[0]}`);
+    }else if (finalAns==1){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[1]} and Your akan name is ${femaleNames[1]}`);
+    }else if (finalAns==2){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[2]} and Your akan name is ${femaleNames[2]}`);
+    }else if (finalAns==3){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[3]} and Your akan name is ${femaleNames[3]}`);
+    }else if (finalAns==4){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[4]} and Your akan name is ${femaleNames[4]}`);
+    }else if (finalAns==5){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[5]} and Your akan name is ${femaleNames[5]}`);
+    }else if (finalAns==6){
+      alert (`Hi ${firstName} You were born on ${dayOfWeek[6]} and Your akan name is ${femaleNames[6]}`);
   }
 }
