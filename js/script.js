@@ -1,15 +1,34 @@
+let firstName = document.getElementById("name").value;
+let yearOfBirth = yearOfBirth = document.getElementById("year").value;
+let monthOfBirth = document.getElementById("month").value 
+let dateOfBirth = document.getElementById("date").value
+var CC, YY, MM, DD, d, dayValue
+var dayOfWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+
+function getInputValueName(firstName){
+  let firstName=document.getElementById("name").value;
+  console.log(firstName);
+}
+function getInputValueYear(){
+  let yearOfBirth = document.getElementById("year").value;
+  console.log(yearOfBirth);
+}
+function getInputValuemonth(){
+  let monthOfBirth= document.getElementById("month").value
+  console.log(monthOfBirth);
+}
+function getInputValueDate(){
+  let dateOfBirth= document.getElementById("date").value
+  console.log(dateOfBirth);
+}
 function validate() {
-    var yearOfBirth = document.myForm.year;
-    var monthOfBirth = document.myForm.month;
-    var dateOfBirth = document.myForm.born;
-    var genders = document.myForm.gender;
-        if(document.myForm.name.value == ""){
-        alert( "Kindly enter your First Name" );
+  if(firstName == ""){
+      alert( "Kindly enter your First Name" );
     }
-    else if( yearOfBirth.value == "" || yearOfBirth.value.length !=4 || yearOfBirth.value <=1800 || yearOfBirth.value >2021) {
-       alert( "Please provide a valid year of birth eg 2021" );
-       document.myForm.year.focus() ;
-       return false;}
+  else if( yearOfBirth.value == "" || yearOfBirth.value.length !=4 || yearOfBirth.value <=1800 || yearOfBirth.value >2021) {
+      alert( "Please provide a valid year of birth eg 2021" );       return false;}
     else if((isNaN(monthOfBirth.value) || monthOfBirth.value <= 0 || monthOfBirth.value > 12) ||monthOfBirth.value == "" || monthOfBirth.value.length !=2 ){
        alert( "Please Enter your month of birth eg jan =01, Feb = 02, and Dec = 12" );
        document.myForm.month.focus() ;
@@ -26,9 +45,7 @@ function validate() {
        else{
          return true;}
        }
-var dayOfWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+
 var firstName = prompt ("Please enter your first name");
 var year = prompt ("Please enter your year of birth")
 var CC = parseInt(year.substring(0,2));
