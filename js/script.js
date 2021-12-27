@@ -58,7 +58,7 @@ console.log(MM)
 var date = prompt('Your date of birth')
 var DD = parseInt(date);
 console.log(DD)
- var d = (((CC/4-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD))%7
+var d = (((CC/4-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD))%7
 var dayValue=d.toFixed(0);
 console.log(dayValue);
 var gender = prompt('Enter your gender, either Male or Female');
