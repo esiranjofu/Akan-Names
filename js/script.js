@@ -1,4 +1,4 @@
-var CC, YY, MM, DD, d, dayValue
+var yearOfBirth, CC, YY, MM, DD, d, dayValue
 var dayOfWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -47,20 +47,30 @@ function validateFormInput() {
 //     return false;}
 var firstName = prompt ("Please enter your first name");
 firstName.toUpperCase[0]
-var yearOfBirth = prompt ('Please enter your year of birth eg 1999')
-CC = parseInt(yearOfBirth.substring(0, 2));
-console.log(CC)
-YY = parseInt(yearOfBirth.substring(2, 4));
-console.log(YY)
-var monthOfBirth = prompt('Enter your month of birth')
-MM= parseInt (monthOfBirth)
-console.log(MM)
-var date = prompt('Your date of birth')
-var DD = parseInt(date);
-console.log(DD)
-var d = (((CC/4-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD))%7
-var dayValue=d.toFixed(0);
-console.log(dayValue);
+function getYearOfBirth(){
+  yearOfBirth= prompt('enter your birth year');
+ }
+ getYearOfBirth()
+ CC = parseInt (yearOfBirth.substring(0, 2))
+ console.log(CC)
+ YY = parseInt (yearOfBirth.substring(2, 4))
+ console.log(YY)
+ function getMonthOfBirth(){
+   monthOfBirth=prompt('enter your birth month, a value between 1, and 12')
+ }
+ getMonthOfBirth()
+ MM =parseInt(monthOfBirth);
+ console.log(MM)
+ function getDateOfBirth(){
+   dateOfBirth=prompt('enter your date of birth, a value between 1 and 31')
+ }
+ getDateOfBirth()
+ DD =parseInt(dateOfBirth)
+ console.log(DD)
+ d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
+ console.log(d)
+ dayValue=d.toFixed(0)
+ console.log(dayValue)
 var gender = prompt('Enter your gender, either Male or Female');
 switch(gender){
   case "Male":
