@@ -46,13 +46,18 @@ function validateFormInput() {
 //   else{
 //     return false;}
 var firstName = prompt ("Please enter your first name");
-var year = prompt ("Please enter your year of birth")
-var CC = parseInt(year.substring(0,2));
-var YY = parseInt(year.substring(2,4));
-var month = prompt ('Please enter your birth month in numbers');
-var MM = parseInt(month);
+firstName.toUpperCase[0]
+var yearOfBirth = prompt ('Please enter your year of birth eg 1999')
+CC = parseInt(yearOfBirth.substring(0, 2));
+console.log(CC)
+YY = parseInt(yearOfBirth.substring(2, 4));
+console.log(YY)
+var monthOfBirth = prompt('Enter your month of birth')
+MM= parseInt (monthOfBirth)
+console.log(MM)
 var date = prompt('Your date of birth')
 var DD = parseInt(date);
+console.log(DD)
  var d = (((CC/4-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD))%7
 var dayValue=d.toFixed(0);
 console.log(dayValue);
