@@ -1,6 +1,6 @@
 # Akan-Names
 ## What the code does
-This article is going to show us how to derive Akan Names. African cultures do name their children differently. Akan name is one way of doing so. By using Akan, a child is given a name depending on  the day they were born, meaning, Sunday has a name attached to, and so is Monday and the rest of the days of the week.
+This article is going to show us how to derive Akan Names. African cultures do name their children differently. Akan name is one way of doing so. By using Akan, a child is given a name depending on  the day they were born, meaning, Sunday has a name attached to it, and so is Monday and the rest of the days of the week.
 
 ## Live Page
 https://esiranjofu.github.io/Akan-Names/
