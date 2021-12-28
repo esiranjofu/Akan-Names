@@ -14,6 +14,31 @@ To fix a bug or enhance an existing module, follow these steps:
 ### Bug / Feature Request
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue here on this website including your search query and the expected result.
 
+### BDD
+Using javascript prompt:
+Enter your year of birth and derive century from this eg the year 2019 will give you 20 as century 19 as your year of birth.
+
+Enter month of birth eg 1 for january Input example 1 Output example 1 as a number
+
+Enter Date of birth eg input 20 and output 20 as a number
+
+Select gender Input example male output male
+
+Submit. Input example, the program compares the inputs with the conditions set for the inputs eg if the date of birth provided is invalid, the program executes else an alert to enter valid details.
+
+0 < Date >= 31.
+0 < Month >= 12
+Gender Male or Female.
+
+True value is output. Output example: You were born on Sunday and Your akan name is Kwasi! and that is if your gender is Male. Or
+True value is output. Output example: You were born on Sunday and Your akan name is Akosua! &and that is If your gender is female.
+Example
+
+century input -- 20
+year input -- 19
+month input -- 7
+date input -- 14
+gender -- male selected, Expected output is You were born on Sunday and Your akan name is Kwasi!
 
 ## Technologies used
 - [Javasript]
@@ -24,5 +49,5 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 
 
 
- Copyright 2021[esiranjofu]
-http://www.apache.org/licenses/LICENSE-2.0
+## Copyright 2021[esiranjofu]
+## http://www.apache.org/licenses/LICENSE-2.0
