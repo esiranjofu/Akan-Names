@@ -2,6 +2,9 @@
 ## What the code does
 This article is going to show us how to derive Akan Names. African cultures do name their children differently. Akan name is one way of doing so. By using Akan, a child is given a name depending on  the day they were born, meaning, Sunday has a name attached to, and so is Monday and the rest of the days of the week.
 
+## Live Page
+https://esiranjofu.github.io/Akan-Names/
+
 ## Contributors
 
 This is an independent project done by ## Emily Siranjofu and you can reach me through my email address esiranjo@gmail.com
@@ -51,8 +54,6 @@ gender -- male selected, Expected output is You were born on Sunday and Your aka
 - [HTML]
 - [CSS]
 - [Bootstrap]
-
-
 
 
 ## Copyright 2021[esiranjofu]
