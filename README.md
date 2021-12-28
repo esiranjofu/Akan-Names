@@ -20,3 +20,9 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 - [HTML]
 - [CSS]
 - [Bootstrap]
+
+
+
+
+ Copyright 2021[esiranjofu]
+http://www.apache.org/licenses/LICENSE-2.0
