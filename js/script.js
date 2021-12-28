@@ -1,4 +1,4 @@
-var yearOfBirth, CC, YY, MM, DD, d, dayValue
+var yearOfBirth, CC, YY, MM, DD, d, dayValue, firstName
 var dayOfWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -45,8 +45,10 @@ function validateFormInput() {
 //   }
 //   else{
 //     return false;}
-var firstName = prompt ("Please enter your first name");
-firstName.toUpperCase[0]
+function getFirstName(){
+firstName = prompt ("Please enter your first name");
+}
+getFirstName()
 function getYearOfBirth(){
   yearOfBirth= prompt('enter your birth year');
  }
@@ -55,17 +57,35 @@ function getYearOfBirth(){
  console.log(CC)
  YY = parseInt (yearOfBirth.substring(2, 4))
  console.log(YY)
- function getMonthOfBirth(){
-   monthOfBirth=prompt('enter your birth month, a value between 1, and 12')
- }
- getMonthOfBirth()
- MM =parseInt(monthOfBirth);
+ do {
+  var isValid =false
+    MM = prompt("Please input your month of birth in numbers");
+    if (MM === null) break;  // user clicked "cancel"
+
+    MM = parseInt(MM);
+    isValid = MM >= 1 && MM <= 12;
+
+    if (isValid) {
+        alert("thank you");
+    } else {
+        alert("Please input a valid month of birth");
+    }
+} while ( !isValid );
  console.log(MM)
- function getDateOfBirth(){
-   dateOfBirth=prompt('enter your date of birth, a value between 1 and 31')
- }
- getDateOfBirth()
- DD =parseInt(dateOfBirth)
+ do {
+  var isTrue =false
+    DD = prompt("Please input your date of birth in numbers between 1 and 31");
+    if (DD === null) break;  // user clicked "cancel"
+
+    DD = parseInt(DD);
+    isTrue = DD >= 1 && DD <= 31;
+
+    if (isTrue) {
+        alert("thank you");
+    } else {
+        alert("Please input a valid date of birth");
+    }
+} while ( !isTrue );
  console.log(DD)
  d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
  console.log(d)
